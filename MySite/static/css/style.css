@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+		background: url(/static/img/buddha.jpg) 0 0 no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: 50% 50%;
+	}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+	height: 50px;
+	width: 100%;
+	background-color: #333;
+	position: relative;
+}
+
+.nav > .nav-header {
+	display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+	display: inline-block;
+	font-size: 22px;
+	padding: 10px;
+}
+.nav > .nav-header > .nav-title > a {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+.nav > .nav-header > .nav-title > a:hover {
+	color: #b2b2b2;
+}
+.nav > .nav-btn {
+	display: inline;
+	float: right;
+	font-size: 18px;
+}
+.nav > .nav-link {
+	float: right;
+}
+
+.nav > .nav-link > a {
+	text-align: center;
+	display: inline-block;
+	padding: 15px 10px 15px 10px;
+	text-decoration: none;
+	color: #efefef;
+}
+
+
+.nav > .nav-link > a:hover {
+	background-color: #1f9904;
+}
+
+.nav > #nav-check {
+	display: none;
+}
+
+.opacity {
+	opacity: 95%;
+}
+.foot-container {
+	position: absolute;
+	top: 95%
+}
+.foot-container > .nav-header {
+	display: inline;
+}
+.foot-container > .nav-header > a{
+	text-align: center;
+	display: inline-block;
+	padding: 15px 10px 15px 10px;
+	text-decoration: none;
+	color: #efefef;
+}
+
+footer {
+	height: 50px;
+	width: 100%;
+	background-color: #333;
+	position: relative;
+}
+@media (max-width: 700px) {
+	.nav > .nav-btn {
+		display: inline-block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+	.nav > .nav-btn > label {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		padding: 13px;
+	}
+
+	.nav > .nav-btn > label:hover,.nav #nav-check:checked ~ .nav-btn > label {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.nav > .nav-btn > label > span {
+		display: block;
+		width: 25px;
+		height: 10px;
+		border-top: 2px solid #eee;
+	}
+
+	.nav > .nav-link {
+		position: absolute;
+		display: block;
+		width: 100%;
+		background-color: #333;
+		height: 0px;
+		transition: all 0.3s ease-in;
+		overflow-y: hidden;
+		top: 50px;
+		left: 0px;
+	}
+
+	.nav > .nav-link > a {
+		display: block;
+		width: 100%;
+	}
+	
+
+	.nav > #nav-check:not(:checked) ~ .nav-link {
+		height: 0px;
+	}
+
+	.nav > #nav-check:checked ~ .nav-link {
+		height: calc(100vh - 50px);
+		overflow-y: auto;
+	}
+	footer {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
